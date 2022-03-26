@@ -135,7 +135,8 @@ img {
 }
 
 img:active {
-  filter: invert(1);
+  filter: hue-rotate(360deg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.445);
 }
 
 figure {
