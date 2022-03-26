@@ -56,17 +56,20 @@ h1 {
   text-align: center;
   width: 70vw;
   max-width: 500px;
+  color: white;
 }
 
 h2 {
-  font-size: 1.5;
+  font-size: 1.5em;
   text-align: center;
   width: 70vw;
   max-width: 500px;
+  color: white;
 }
 
 h3 {
   font-size: 1.3em;
+  text-align: center;
 }
 
 p {
@@ -96,8 +99,8 @@ button {
   border-radius: 10px;
   color: rgb(163, 63, 80);
   font-size: 1.2em;
-  transition: 0.3s;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 button:active {
@@ -105,15 +108,34 @@ button:active {
 }
 
 @media(hover: hover) and (pointer: fine) {
+  button {
+    transition: 0.3s;
+  }
+
   button:hover {
     background: rgba(163, 63, 80, 0.26);
+  }
+
+  img:hover {
+    filter: hue-rotate(360deg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.445);
   }
 }
 
 img {
-  width: 100%;
+  width: 70vw;
+  max-width: 500px;
+  height: 70vw;
+  max-height: 500px;
   image-rendering: pixelated;
   align-self: center;
+  background: rgb(207, 207, 207);
+  border-radius: 30px;
+  transition: 1s;
+}
+
+img:active {
+  filter: invert(1);
 }
 
 figure {

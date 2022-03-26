@@ -9,6 +9,9 @@ function returnApiUrl(pokemonId) {
 }
 
 async function generatePokemon() {
+  imageElement.setAttribute('src', '')
+  imageCaptionElement.textContent = 'Carregando nome do Pokémon...'
+
   const randomPokemonId = (Math.floor(Math.random() * 898) + 1)
   // const randomPokemonId = 1000
   const apiUrl = returnApiUrl(randomPokemonId)
