@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Playfair Display;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(141, 66, 79);
+  /* background: linear-gradient(
+    to left bottom,
+    rgb(231, 83, 108),
+    rgb(122, 78, 86)
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+}
+
+header {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+section {
+  background: rgb(238, 238, 238);
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 70vw;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.164);
+}
+
+footer {
+  padding-bottom: 50px;
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: .8em;
+}
+
+h1, h2, h3, p {
+  color: rgb(20, 20, 20);
+  overflow-wrap: break-word;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  width: 70vw;
+  max-width: 500px;
+}
+
+h2 {
+  font-size: 1.5;
+  text-align: center;
+  width: 70vw;
+  max-width: 500px;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+p {
+  font-size: 1.05em;
+  margin-bottom: 3px;
+}
+
+hr {
+  margin-bottom: 7px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  background: white;
+  color: rgb(141, 66, 79)
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: 2px solid rgb(163, 63, 80);
+  border-radius: 10px;
+  color: rgb(163, 63, 80);
+  font-size: 1.2em;
+  transition: 0.3s;
+  margin-bottom: 10px;
+}
+
+button:active {
+  background: rgba(163, 63, 80, 0.26);
+}
+
+@media(hover: hover) and (pointer: fine) {
+  button:hover {
+    background: rgba(163, 63, 80, 0.26);
+  }
+}
+
+img {
+  width: 100%;
+  image-rendering: pixelated;
+  align-self: center;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+}

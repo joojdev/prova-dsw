@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Pokémon</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/main.js" defer></script>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <h1>Gerador de Pokémon</h1>
+    <h2>Prova da Matéria de Desenvolvimento Web</h2>
+  </header>
+  <section>
+    <h2>Como funciona?</h2>
+
+    <hr>
+
+    <p>
+      &emsp;O website utiliza uma <em>API</em> pública chamada <em>PokéAPI</em>.
+    </p>
+    <p>
+      &emsp;Quando pressionado o botão abaixo chamado "<strong>Gerar novo Pokémon</strong>", o seu navegador vai gerar um número aleatório e mandar uma requisição ao servidor da <em>API</em>.
+    </p>
+    <p>
+      &emsp;Um objeto com as informações do <em>Pokémon</em> escolhido será retornado se tudo estiver certo.
+    </p>
+    <p>
+      &emsp;Logo, as informações do <em>Pokémon</em> vão aparecer no site.
+    </p>
+
+    <h2>Na prática</h2>
+
+    <hr>
+
+    <button id="generateButton">Gerar novo Pokémon</button>
+    <figure>
+      <img src="#" id="image" alt="Carregando imagem do Pokémon...">
+      <figcaption><em id="imageCaption">Carregando nome do Pokémon...</em></figcaption>
+    </figure>
+  </section>
+  <footer>
+    &copy; <a href="https://github.com/joojdev" target="_blank">jão vito</a>
+  </footer>
+</body>
+</html>
